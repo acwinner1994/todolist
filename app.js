@@ -29,6 +29,6 @@ app.post("/",function(req,res){
   res.redirect("/");
 });
 
-app.listen(3000,function(){
+app.listen(procee.env.PORT||3000,function(){
   console.log("server started!");
 });
